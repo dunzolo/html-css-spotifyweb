@@ -64,7 +64,29 @@ aside{
     background-color: yellow;
     margin-top: 80px;
     overflow-y: auto;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+}
 
+.row{
+    display: flex;
+}
+
+.col-100{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+
+.album{
+    width: 150px;
+    max-width: 150px;
+    height: 150px;
+    background-color: orange;
+    border: 1px solid red;
+    margin: 10px;
 }
 
 /* fine main */
