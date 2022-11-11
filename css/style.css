@@ -58,7 +58,7 @@ aside{
 /* fine sidebar */
 
 /* inizio main */
-main{
+#main-container{
     width: calc(100vw - 150px);
     height: calc(100vh - 100px);
     background-color: yellow;
@@ -92,4 +92,21 @@ footer{
     width: calc(100% - 300px);
     background-color: #0000ff;
     border: 3px solid red;
+}
+/* fine footer */
+
+/* DESKTOP FIRST */
+/* Version mobile xs */
+@media screen and (max-width: 576px){
+    header{
+        width: calc(100% - 50px);
+    }
+
+    #sidebar{
+        width: 50px;
+    }
+
+    #main-container{
+        width: calc(100vw - 50px);
+    }
 }
