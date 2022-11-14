@@ -8,10 +8,27 @@
     display: flex;
 }
 
+/* utils */
+.font-size-20{
+    font-size: 20px;
+}
+
+.padding-10{
+    padding: 10px;
+}
+
+.padding-right-10{
+    padding-right: 10px;
+}
+
+.style-type-none{
+    list-style-type: none;
+}
+
 /* inizio header */
 header{
     height: 80px;
-    width: calc(100% - 150px);
+    width: calc(100% - 200px);
     background-color: #000000;
     position: fixed;
     z-index: 1;
@@ -32,12 +49,36 @@ header #upgrade{
 
 /* inizio sidebar */
 #sidebar{
-    width: 150px;
+    width: 200px;
     height: calc(100vh - 100px);
     background-color: #ff0000;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+#sidebar-menu{
+    width: 100%;
+    /* height: 300px; */
+    background-color: #925c65;
+}
+
+#sidebar-menu .logo{
+    padding: 10px;
+    width: 180px;
+}
+
+#sidebar-menu ul li, #sidebar-menu p{
+    /* font-size: 18px; */
+    padding: 5px 0px;
+}
+
+#sidebar-menu i{
+    vertical-align: middle;
+}
+
+#sidebar-menu ul li i{
+    width: 45px;
 }
 
 #sidebar-bottom{
@@ -46,16 +87,11 @@ header #upgrade{
     background-color: #ffc0cb;
 }
 
-#sidebar-menu{
-    width: 100%;
-    height: 300px;
-    background-color: #925c65;
-}
 /* fine sidebar */
 
 /* inizio main */
 #main-container{
-    width: calc(100vw - 150px);
+    width: calc(100vw - 200px);
     height: calc(100vh - 100px);
     background-color: yellow;
     margin-top: 80px;
