@@ -29,6 +29,10 @@
     font-size: 20px;
 }
 
+.font-size-25{
+    font-size: 25px;
+}
+
 .padding-10{
     padding: 10px;
 }
@@ -93,7 +97,7 @@ header #upgrade{
     width: 180px;
 }
 
-#sidebar-menu ul li, #sidebar-menu p{
+#sidebar-menu ul li, #sidebar-menu p, #sidebar-icon-top ul li{
     /* font-size: 18px; */
     padding: 5px 0px;
 }
@@ -112,7 +116,11 @@ header #upgrade{
     /* background-color: #ffc0cb; */
 }
 
-#sidebar-bottom .profile-img{
+#sidebar-icon-top, #sidebar-icon-bottom{
+    display: none;
+}
+
+.profile-img{
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -207,6 +215,14 @@ footer{
 
     #sidebar{
         width: 50px;
+    }
+
+    #sidebar-menu, #sidebar-bottom{
+        display: none;
+    }
+
+    #sidebar-icon-top, #sidebar-icon-bottom{
+        display: block;
     }
 
     #main-container{
