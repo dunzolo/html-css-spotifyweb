@@ -11,6 +11,10 @@
 }
 
 /* utils */
+.align-center{
+    align-items: center;
+}
+
 .border-bottom-grey{
     border-bottom: 1px solid rgb(111, 111, 111);
 }
@@ -49,6 +53,10 @@
 
 .padding-10{
     padding: 10px;
+}
+
+.padding-left-10{
+    padding-left: 10px;
 }
 
 .padding-top-10{
@@ -210,15 +218,33 @@ footer{
 
 #footer-left, #footer-right{
     height: 100%;
-    width: 150px;
-    background-color: #0000ff;
+    width: 200px;
+    background-color: rgb(40, 40, 40);
 }
 
 #footer-central{
     height: 100%;
-    width: calc(100% - 300px);
-    background-color: #0000ff;
+    width: calc(100% - 400px);
+    background-color: rgb(40, 40, 40);
     border: 3px solid red;
+}
+
+#footer-central ul li{
+    padding: 10px;
+}
+
+#footer-central .progress-music{
+    height: 5px;
+    width: 70%;
+    background-color:rgb(111, 111, 111);
+    border-radius: 5px;
+}
+
+#footer-central .progress-music-20{
+    height: 5px;
+    width: 20%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
 }
 /* fine footer */
 
