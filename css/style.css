@@ -9,6 +9,22 @@
 }
 
 /* utils */
+.border-bottom-grey{
+    border-bottom: 1px solid rgb(111, 111, 111);
+}
+
+.color-grey{
+    color: rgb(111, 111, 111);
+}
+
+.color-white{
+    color: rgb(255, 255, 255);
+}
+
+.decoration-none{
+    text-decoration: none;
+}
+
 .font-size-20{
     font-size: 20px;
 }
@@ -17,8 +33,16 @@
     padding: 10px;
 }
 
+.padding-top-10{
+    padding-top: 10px;
+}
+
 .padding-right-10{
     padding-right: 10px;
+}
+
+.padding-bottom-10{
+    padding-bottom: 10px;
 }
 
 .style-type-none{
@@ -51,7 +75,8 @@ header #upgrade{
 #sidebar{
     width: 200px;
     height: calc(100vh - 100px);
-    background-color: #ff0000;
+    background-color: rgb(0, 0, 0);
+    /* color: rgb(255, 255, 255); */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -60,7 +85,7 @@ header #upgrade{
 #sidebar-menu{
     width: 100%;
     /* height: 300px; */
-    background-color: #925c65;
+    /* background-color: #925c65; */
 }
 
 #sidebar-menu .logo{
@@ -73,7 +98,7 @@ header #upgrade{
     padding: 5px 0px;
 }
 
-#sidebar-menu i{
+#sidebar-menu i, #sidebar-bottom .profile-img{
     vertical-align: middle;
 }
 
@@ -83,8 +108,15 @@ header #upgrade{
 
 #sidebar-bottom{
     width: 100%;
-    height: 50px;
-    background-color: #ffc0cb;
+    /* height: 50px; */
+    /* background-color: #ffc0cb; */
+}
+
+#sidebar-bottom .profile-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(111, 111, 111);
 }
 
 /* fine sidebar */
