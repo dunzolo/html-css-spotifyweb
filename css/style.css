@@ -31,10 +31,6 @@ header #upgrade{
 
 
 /* inizio sidebar */
-aside{
-    display: flex;
-}
-
 #sidebar{
     width: 150px;
     height: calc(100vh - 100px);
@@ -81,12 +77,11 @@ aside{
 }
 
 .album{
-    width: 150px;
-    max-width: 150px;
+    width: calc(100% / 6);
     height: 150px;
     background-color: orange;
     border: 1px solid red;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 /* fine main */
@@ -95,6 +90,7 @@ aside{
 footer{
     height: 100px;
     width: 100%;
+    /* oppure 100vh */
     background-color: #00ffff;
     position: fixed;
     z-index: 1;
@@ -118,7 +114,24 @@ footer{
 /* fine footer */
 
 /* DESKTOP FIRST */
-/* Version mobile xs */
+/* version desktop */
+@media screen and (max-width: 992px){
+    .col-100{
+        flex-wrap: wrap;
+    }
+
+    .album{
+        width: calc(100% / 4);
+    }
+}
+/* version tablet */
+@media screen and (max-width: 768px){
+    .album{
+        width: calc(100% / 2);
+    }
+}
+
+/* version mobile xs */
 @media screen and (max-width: 576px){
     header{
         width: calc(100% - 50px);
