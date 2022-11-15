@@ -1,7 +1,10 @@
+@import url('https://fonts.cdnfonts.com/css/circular-std');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Circular-std', sans-serif;
 }
 
 .wrapper{
@@ -121,6 +124,8 @@ header{
 
 #sidebar-menu{
     width: 100%;
+    overflow-y: hidden;
+    /* devo togliere position absolute a bottom menu */
 }
 
 #sidebar-menu .logo{
@@ -143,12 +148,22 @@ header{
 
 #sidebar-bottom{
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    /* bottom: 0; */
     /* z-index: 1; */
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
     /* height: 50px; */
     /* background-color: #ffc0cb; */
+}
+
+.playlist{
+    overflow-y: hidden;
+    height: 100%;
+    /* height: 400px; */
+}
+
+.playlist ul{
+    height: 40%;
 }
 
 #sidebar-icon-top, #sidebar-icon-bottom{
@@ -182,6 +197,7 @@ header{
 
 .row{
     display: flex;
+    width: 100%;
 }
 
 .col-100{
@@ -208,43 +224,92 @@ footer{
     height: 100px;
     width: 100%;
     /* oppure 100vh */
-    background-color: #00ffff;
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
+    background-color: rgb(40, 40, 40);
+    /* position: fixed; */
+    /* z-index: 1; */
+    /* bottom: 0; */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 #footer-left, #footer-right{
     height: 100%;
     width: 200px;
-    background-color: rgb(40, 40, 40);
+    display: flex;
+}
+
+.playing-image{
+    max-width: 100%;
+    /* media query 576px far sparire immagine come bonus */
+}
+
+.currently-playing{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.currently-image{
+    width:30%;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+.icons a{
+    padding: 0px 5px;
 }
 
 #footer-central{
     height: 100%;
+    /* utilizzare width fissa dopo i 768 con media query metto in percentuale */
     width: calc(100% - 400px);
-    background-color: rgb(40, 40, 40);
     border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #footer-central ul li{
     padding: 10px;
 }
 
-#footer-central .progress-music{
+.progress-music{
     height: 5px;
-    width: 70%;
+    width: 45%;
     background-color:rgb(111, 111, 111);
     border-radius: 5px;
 }
 
-#footer-central .progress-music-20{
-    height: 5px;
+.progress-music-20{
+    height: 100%;
     width: 20%;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.progress-music-cursor{
+    display: none;
+}
+
+.progress-music:hover .progress-music-cursor{
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: blueviolet;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.progress-music:hover .progress-music-20{
+    background-color: aqua;
 }
 /* fine footer */
 
@@ -286,5 +351,18 @@ footer{
 
     #main-container{
         width: calc(100vw - 50px);
+    }
+
+    #footer-left, #footer-right{
+        width: 30%;
+    }
+
+    #footer-central{
+        width: 40%;
+    }
+
+    #footer-left .icons{
+        flex-direction: column;
+        justify-content: center;
     }
 }

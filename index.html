@@ -28,8 +28,8 @@
                         <p class="font-size-20 color-white">PLAYLIST</p>
                         <i class="fa-solid fa-square-plus fa-3x padding-right-10"></i><span class="font-size-20">Crea playlist</span>
                         <!-- to do -->
-                        <div class="overflow-auto">
-                            <ul class="style-type-none">
+                        <!-- <div class="overflow-auto"> -->
+                            <ul class="style-type-none overflow-auto">
                                 <li>Nome Playlist</li>
                                 <li>Nome Playlist</li>
                                 <li>Nome Playlist</li>
@@ -38,7 +38,7 @@
                                 <li>Nome Playlist</li>
                                 <li>Nome Playlist</li>
                             </ul>
-                        </div>
+                        <!-- </div> -->
                     </div>
                 </div>
                 <div id="sidebar-bottom" class="padding-10">
@@ -165,12 +165,28 @@
         <footer>
             <!-- Navbar footer -->
             <div id="footer-left">
-
+                <div class="row">
+                    <div class="currently-playing">
+                        <div class="currently-image">
+                            <img class="playing-image" src="./img/sinister.jpeg" alt="">
+                        </div>
+                        <div class="info-song">
+                            <!-- usare p o div -->
+                            <p class="color-white">Sinister</p>
+                            <p class="color-grey">Brano none</p>
+                        </div>
+                    </div>
+                    <div class="icons font-size-20">
+                        <a href=""><i class="fa-regular fa-heart color-grey"></i></a>
+                        <a href=""><i class="fa-regular fa-folder color-grey"></i></a>
+                    </div>
+                </div>
             </div>
             <div id="footer-central">
+                <!-- player-buttons -->
                 <div class="row">
                     <div class="col-100 justify-center">
-                        <ul class="inline-list style-type-none color-white font-size-25">
+                        <ul class="inline-list style-type-none color-white font-size-20">
                             <li><i class="fa-solid fa-shuffle"></i></li>
                             <li><i class="fa-solid fa-backward-step"></i></li>
                             <li><i class="fa-regular fa-circle-play"></i></li>
@@ -179,11 +195,14 @@
                         </ul>
                     </div>
                 </div>
+                <!-- player-bar -->
                 <div class="row">
                     <div class="col-100 justify-center align-center padding-10 color-white">
                         <span class="padding-right-10">0:25</span>
                         <div class="progress-music">
                             <div class="progress-music-20">
+                                <div class="progress-music-cursor">
+                                </div>
                             </div>
                         </div>
                         <span class="padding-left-10">4:35</span>
@@ -191,7 +210,21 @@
                 </div>
             </div>
             <div id="footer-right">
-
+                <div class="row">
+                    <div class="col-100 justify-center align-center">
+                        <div class="icons padding-10">
+                            <a href=""><i class="fa-solid fa-list color-white"></i></a>
+                            <a href=""><i class="fa-solid fa-desktop color-white"></i></a>
+                            <a href=""><i class="fa-solid fa-volume-high color-white"></i></a>
+                        </div>
+                        <div class="progress-music">
+                            <div class="progress-music-20">
+                                <div class="progress-music-cursor">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
     </body>
