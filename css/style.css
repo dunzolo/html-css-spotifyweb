@@ -89,7 +89,7 @@
 /* inizio header */
 header{
     height: 80px;
-    width: calc(100% - 200px);
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     z-index: 1;
@@ -189,10 +189,6 @@ header{
     /* display: flex;
     flex-direction: row;
     justify-content: space-between; */
-}
-
-#main-container .inline-list li{
-    padding-right: 10px;
 }
 
 .row{
@@ -323,6 +319,7 @@ footer{
     .album{
         width: calc(100% / 4);
     }
+
 }
 /* version tablet */
 @media screen and (max-width: 768px){
