@@ -25,8 +25,10 @@
                         </ul>
                     </div>
                     <div class="playlist padding-10 color-grey">
-                        <p class="font-size-20 color-white">PLAYLIST</p>
-                        <i class="fa-solid fa-square-plus fa-3x padding-right-10"></i><span class="font-size-20">Crea playlist</span>
+                        <div class="add-playlist">
+                            <p class="font-size-20 color-white">PLAYLIST</p>
+                            <i class="fa-solid fa-square-plus fa-3x padding-right-10"></i><span class="font-size-20">Crea playlist</span>
+                        </div>
                         <!-- to do -->
                         <!-- <div class="overflow-auto"> -->
                             <ul class="style-type-none overflow-auto">
@@ -44,7 +46,7 @@
                 <div id="sidebar-bottom" class="padding-10">
                     <div class="padding-bottom-10 border-bottom-grey">
                         <a class="color-grey decoration-none" href="">
-                            <i class="fa-regular fa-circle-down padding-right-10"></i><span>Installa app</span>
+                            <i class="fa-regular fa-circle-down padding-right-10"></i><span class="tag-intall">Installa app</span>
                         </a>
                     </div>
                     <div class="padding-top-10">
@@ -83,7 +85,7 @@
                 </header>
                 <div id="main-container">
                     <div class="row">
-                        <div class="col-100 justify-center color-grey">
+                        <div class="col-100 justify-center color-grey types">
                             <div class="padding-10">IN EVIDENZA</div>
                             <div class="padding-10">PODCAST</div>
                             <div class="padding-10">CLASSIFICHE</div>
@@ -98,32 +100,62 @@
                     <div class="row">
                         <div class="col-100 text-center">
                             <div class="album padding-10">
-                                <img class="album-img" src="./img/metal_lifting.jpg" alt="heavy_metal">
+                                <div class="pos-relative">
+                                    <img class="album-img" src="./img/metal_lifting.jpg" alt="heavy_metal">
+                                    <div class="play-song">
+                                        <i class="fa-regular fa-circle-play fa-4x color-white"></i>
+                                    </div>
+                                </div>
                                 <h3 class="color-white font-size-20">Heavy Metal</h3>
                                 <p class="color-grey">Subtitle</p>
                             </div>
                             <div class="album padding-10">
-                                <img class="album-img" src="./img/stranger.jpeg" alt="stranger">
+                                <div class="pos-relative">
+                                    <img class="album-img" src="./img/stranger.jpeg" alt="stranger">
+                                    <div class="play-song">
+                                        <i class="fa-regular fa-circle-play fa-4x color-white"></i>
+                                    </div>
+                                </div>
                                 <h3 class="color-white font-size-20">Stranger Things Vol.1 (a Netflix Original Series Soundtrack)</h3>
                                 <p class="color-grey">Kyle Dixon & Micheal Stein</p>
                             </div>
                             <div class="album padding-10">
-                                <img class="album-img" src="./img/aquietplace.jpeg" alt="aquietplace">
+                                <div class="pos-relative">
+                                    <img class="album-img" src="./img/aquietplace.jpeg" alt="aquietplace">
+                                    <div class="play-song">
+                                        <i class="fa-regular fa-circle-play fa-4x color-white"></i>
+                                    </div>
+                                </div>
                                 <h3 class="color-white font-size-20">A quiet place</h3>
                                 <p class="color-grey">Subtitle</p>
                             </div>
                             <div class="album padding-10">
-                                <img class="album-img" src="./img/split.jpeg" alt="split">
+                                <div class="pos-relative">
+                                    <img class="album-img" src="./img/split.jpeg" alt="split">
+                                    <div class="play-song">
+                                        <i class="fa-regular fa-circle-play fa-4x color-white"></i>
+                                    </div>
+                                </div>
                                 <h3 class="color-white font-size-20">split</h3>
                                 <p class="color-grey">Subtitle</p>
                             </div>
                             <div class="album padding-10">
-                                <img class="album-img" src="./img/cure.jpeg" alt="cure">
+                                <div class="pos-relative">
+                                    <img class="album-img" src="./img/cure.jpeg" alt="cure">
+                                    <div class="play-song">
+                                        <i class="fa-regular fa-circle-play fa-4x color-white"></i>
+                                    </div>
+                                </div>
                                 <h3 class="color-white font-size-20">A cure for wellness</h3>
                                 <p class="color-grey">Subtitle</p>
                             </div>
                             <div class="album padding-10">
-                                <img class="album-img" src="./img/sinister.jpeg" alt="sinister">
+                                <div class="pos-relative">
+                                    <img class="album-img" src="./img/sinister.jpeg" alt="sinister">
+                                    <div class="play-song">
+                                        <i class="fa-regular fa-circle-play fa-4x color-white"></i>
+                                    </div>
+                                </div>
                                 <h3 class="color-white font-size-20">Sinister</h3>
                                 <p class="color-grey">Subtitle</p>
                             </div>
@@ -135,11 +167,21 @@
                     </div>
                     <div class="col-100 text-center">
                         <div class="album padding-10">
-                            <img class="album-img" src="./img/radar.jpeg" alt="radar">
+                            <div class="pos-relative">
+                                <img class="album-img" src="./img/radar.jpeg" alt="radar">
+                                <div class="play-song">
+                                    <i class="fa-regular fa-circle-play fa-4x color-white"></i>
+                                </div>
+                            </div>
                             <h3 class="color-white font-size-20">Release Radar</h3>
                         </div>
                         <div class="album padding-10">
-                            <img class="album-img" src="./img/mixdaily.jpeg" alt="mixdaily">
+                            <div class="pos-relative">
+                                <img class="album-img" src="./img/mixdaily.jpeg" alt="mixdaily">
+                                <div class="play-song">
+                                    <i class="fa-regular fa-circle-play fa-4x color-white"></i>
+                                </div>
+                            </div>
                             <h3 class="color-white font-size-20">Daily mix 1</h3>
                         </div>
                     </div>
@@ -149,11 +191,21 @@
                     </div>
                     <div class="col-100 text-center">
                         <div class="album padding-10">
-                            <img class="album-img" src="./img/youg.jpeg" alt="youg">
+                            <div class="pos-relative">
+                                <img class="album-img" src="./img/youg.jpeg" alt="youg">
+                                <div class="play-song">
+                                    <i class="fa-regular fa-circle-play fa-4x color-white"></i>
+                                </div>
+                            </div>
                             <h3 class="color-white font-size-20">Lana del Rey</h3>
                         </div>
                         <div class="album padding-10">
-                            <img class="album-img" src="./img/einaudi.jpeg" alt="mixdaily">
+                            <div class="pos-relative">
+                                <img class="album-img" src="./img/einaudi.jpeg" alt="mixdaily">
+                                <div class="play-song">
+                                    <i class="fa-regular fa-circle-play fa-4x color-white"></i>
+                                </div>
+                            </div>
                             <h3 class="color-white font-size-20">Ludovico Einaudi</h3>
                         </div>
                     </div>
@@ -171,7 +223,7 @@
                         <div class="info-song">
                             <!-- usare p o div -->
                             <p class="color-white">Sinister</p>
-                            <p class="color-grey">Brano none</p>
+                            <p class="color-grey title-song">Brano none</p>
                         </div>
                     </div>
                     <div class="icons font-size-20">
