@@ -13,6 +13,16 @@
     width: 100%;
 }
 
+.row{
+    display: flex;
+    width: 100%;
+}
+
+.col-100{
+    width: 100%;
+    display: flex;
+}
+
 /* utils */
 .align-center{
     align-items: center;
@@ -115,6 +125,12 @@ header{
     color: rgb(255, 255, 255);
     border-radius: 30px;
 }
+
+.btn-upgrade:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 3px;
+    scale: 1.1;
+}
 /* fine header */
 
 
@@ -123,7 +139,6 @@ header{
     width: 200px;
     height: calc(100vh - 100px);
     background-color: rgb(0, 0, 0);
-    /* color: rgb(255, 255, 255); */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -133,7 +148,6 @@ header{
 #sidebar-menu{
     width: 100%;
     overflow-y: hidden;
-    /* devo togliere position absolute a bottom menu */
 }
 
 #sidebar-menu .logo{
@@ -142,7 +156,6 @@ header{
 }
 
 #sidebar-menu ul li, #sidebar-menu p, #sidebar-icon-top ul li{
-    /* font-size: 18px; */
     padding: 5px 0px;
 }
 
@@ -161,12 +174,6 @@ header{
 
 #sidebar-bottom{
     width: 100%;
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* z-index: 1; */
-    /* background-color: rgb(0, 0, 0); */
-    /* height: 50px; */
-    /* background-color: #ffc0cb; */
 }
 
 #sidebar-bottom .tag-intall:hover{
@@ -176,7 +183,6 @@ header{
 .playlist{
     overflow-y: hidden;
     height: 100%;
-    /* height: 400px; */
 }
 
 .playlist ul{
@@ -193,7 +199,6 @@ header{
     border-radius: 50%;
     background-color: rgb(111, 111, 111);
 }
-
 /* fine sidebar */
 
 /* inizio main */
@@ -203,9 +208,6 @@ header{
     background-color: rgb(20, 25, 34);
     padding-top: 80px;
     overflow-y: auto;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between; */
 }
 
 .types div:hover{
@@ -213,41 +215,38 @@ header{
     cursor: pointer;
 }
 
-.row{
-    display: flex;
-    width: 100%;
-}
-
-.col-100{
-    width: 100%;
-    display: flex;
-}
-
 .album{
     width: calc(100% / 6);
-    /* height: 150px; */
-    /* background-color: orange; */
-    /* border: 1px solid red; */
-    /* margin: 10px; */
 }
 
 .album-img{
     width: 100%;
 }
 
+.play-song {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.album:hover .play-song{
+    opacity: 1;
+}
+
+.album:hover .album-img{
+    opacity: 0.3;
+}
 /* fine main */
 
 /* inizio footer */
 footer{
     height: 100px;
     width: 100%;
-    /* oppure 100vh */
     background-color: rgb(40, 40, 40);
-    /* position: fixed; */
-    /* z-index: 1; */
-    /* bottom: 0; */
     display: flex;
-    /* justify-content: space-between; */
 }
 
 #footer-left, #footer-right{
@@ -256,9 +255,18 @@ footer{
     display: flex;
 }
 
+#footer-left .title-song:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+#footer-left .icons i:hover{
+    color: rgb(255, 255, 255);
+}
+
 .playing-image{
     max-width: 100%;
-    /* media query 576px far sparire immagine come bonus */
 }
 
 .currently-playing{
@@ -280,19 +288,8 @@ footer{
     padding: 0px 5px;
 }
 
-#footer-left .title-song:hover{
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-}
-
-#footer-left .icons i:hover{
-    color: rgb(255, 255, 255);
-}
-
 #footer-central{
     height: 100%;
-    /* utilizzare width fissa dopo i 768 con media query metto in percentuale */
     width: calc(100% - 400px);
     display: flex;
     flex-direction: column;
@@ -301,6 +298,14 @@ footer{
 
 #footer-central ul li{
     padding: 10px;
+}
+
+#footer-central .inline-list:hover{
+    cursor: pointer;
+}
+
+#footer-central .fa-circle-play:hover{
+    scale: 1.2;
 }
 
 .progress-music{
@@ -393,34 +398,4 @@ footer{
         flex-direction: column;
         justify-content: center;
     }
-}
-
-
-.play-song {
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.album:hover .play-song{
-    opacity: 1;
-}
-
-.album:hover .album-img{
-    opacity: 0.3;
-}
-
-.btn-upgrade:hover{
-    cursor: pointer;
-    box-shadow: 0px 0px 3px 3px;
-    scale: 1.1;
-    /* padding: 15px 40px; */
-    /* font-size: 15px; */
-}
-
-#footer-central .fa-circle-play:hover{
-    scale: 1.2;
 }

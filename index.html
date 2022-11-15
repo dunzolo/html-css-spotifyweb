@@ -10,10 +10,8 @@
     </head>
     <body>
         <!-- DESKTOP FIRST -->
-        
         <div class="wrapper">
             <!-- Sidebar -->
-            <!-- usare tag aside -->
             <div id="sidebar">
                 <div id="sidebar-menu">
                     <a href=""><img class="logo" src="./img/logo.svg" alt="logo"></a>
@@ -24,23 +22,21 @@
                             <li><i class="fa-solid fa-lines-leaning fa-2x"></i><span>La tua libreria</span></li>
                         </ul>
                     </div>
+                    <!-- Playlist -->
                     <div class="playlist padding-10 color-grey">
                         <div class="add-playlist">
                             <p class="font-size-20 color-white">PLAYLIST</p>
                             <i class="fa-solid fa-square-plus fa-3x padding-right-10"></i><span class="font-size-20">Crea playlist</span>
                         </div>
-                        <!-- to do -->
-                        <!-- <div class="overflow-auto"> -->
-                            <ul class="style-type-none overflow-auto">
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                            </ul>
-                        <!-- </div> -->
+                        <ul class="style-type-none overflow-auto">
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
                     </div>
                 </div>
                 <div id="sidebar-bottom" class="padding-10">
@@ -54,36 +50,36 @@
                         <span class="font-size-20 color-white"><strong>John Doe</strong></span>
                     </div>
                 </div>
-                
-                    <div id="sidebar-icon-top" class="padding-10">
-                        <ul class="style-type-none color-grey">
-                            <li><i class="fa-brands fa-spotify fa-2x color-white"></i></li>
-                            <li><i class="fa-solid fa-house font-size-25"></i></li>
-                            <li><i class="fa-solid fa-magnifying-glass font-size-25"></i></li>
-                            <li><i class="fa-solid fa-lines-leaning font-size-25"></i></li>
-                        </ul>
+                <!-- Section version mobile -->
+                <div id="sidebar-icon-top" class="padding-10">
+                    <ul class="style-type-none color-grey">
+                        <li><i class="fa-brands fa-spotify fa-2x color-white"></i></li>
+                        <li><i class="fa-solid fa-house font-size-25"></i></li>
+                        <li><i class="fa-solid fa-magnifying-glass font-size-25"></i></li>
+                        <li><i class="fa-solid fa-lines-leaning font-size-25"></i></li>
+                    </ul>
+                </div>
+                <div id="sidebar-icon-bottom" class="padding-10">
+                    <div class="padding-bottom-10">
+                        <a class="color-grey decoration-none" href="">
+                            <i class="fa-regular fa-circle-down padding-right-10"></i>
+                        </a>
                     </div>
-                    <div id="sidebar-icon-bottom" class="padding-10">
-                        <div class="padding-bottom-10">
-                            <a class="color-grey decoration-none" href="">
-                                <i class="fa-regular fa-circle-down padding-right-10"></i>
-                            </a>
-                        </div>
-                        <div class="padding-top-10">
-                            <img class="profile-img" src="./img/profile.svg" alt="profile">
-                        </div>
+                    <div class="padding-top-10">
+                        <img class="profile-img" src="./img/profile.svg" alt="profile">
                     </div>
-                
+                </div>
             </div>
             <!-- Main container -->
             <main>
+                <!-- Topbar -->
                 <header>
-                    <!-- Topbar -->
                     <div id="upgrade" class="margin-right-20">
                         <button class="btn-upgrade">EFFETTUA L'UPGRADE</button>
                     </div>
                 </header>
                 <div id="main-container">
+                    <!-- List types -->
                     <div class="row">
                         <div class="col-100 justify-center color-grey types">
                             <div class="padding-10">IN EVIDENZA</div>
@@ -97,6 +93,7 @@
                     <div class="padding-10">
                         <h2 class="color-white font-size-25">Recently played</h2>
                     </div>
+                    <!-- First section album -->
                     <div class="row">
                         <div class="col-100 text-center">
                             <div class="album padding-10">
@@ -165,6 +162,7 @@
                         <h2 class="color-white font-size-25">Creato per John Doe</h2>
                         <p class="color-grey">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
                     </div>
+                    <!-- Second section album -->
                     <div class="col-100 text-center">
                         <div class="album padding-10">
                             <div class="pos-relative">
@@ -189,6 +187,7 @@
                         <h2 class="color-white font-size-25">Artisti pi&ugrave; popolari</h2>
                         <p class="color-grey">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</p>
                     </div>
+                    <!-- Third section album -->
                     <div class="col-100 text-center">
                         <div class="album padding-10">
                             <div class="pos-relative">
@@ -221,7 +220,6 @@
                             <img class="playing-image" src="./img/sinister.jpeg" alt="">
                         </div>
                         <div class="info-song">
-                            <!-- usare p o div -->
                             <p class="color-white">Sinister</p>
                             <p class="color-grey title-song">Brano none</p>
                         </div>
