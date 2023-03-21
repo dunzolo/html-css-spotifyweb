@@ -1,15 +1,17 @@
 <h2 align="center">Spotify</h2>
 
 <p align="center">
- <img src="https://user-images.githubusercontent.com/112269790/226673769-dacb8d1a-48bb-49be-986a-10a87908807f.png" alt="campo-minato-layout" width="80%">
+ <img src="https://user-images.githubusercontent.com/112269790/226673769-dacb8d1a-48bb-49be-986a-10a87908807f.png" alt="spotify-layout-layout" width="80%">
 </p>
 <p align="center">
     Replica of the famous music streaming platform: Spotify
-    - functionality: responsive layout
+</p>
+<p>
+- functionality: responsive layout
 </p>
 
 <h3>🎥 Preview<h3>
-<img src="https://user-images.githubusercontent.com/112269790/226585548-6d99769f-7a2c-483a-8307-e2c1f7599768.gif" alt="campo-minato-preview" width="100%">
+<img src="https://user-images.githubusercontent.com/112269790/226676535-caa93390-d1ae-42ed-a966-2c2cbfbb3037.gif" alt="spotify-layout-preview" width="100%">
 
 <h3>⛏️ Built With</h3>
 <div align="left">
