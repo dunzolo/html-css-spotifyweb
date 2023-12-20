@@ -20,9 +20,16 @@
 <h3>⛏️ Realizzato con</h3>
 <div align="left">
 
-|Struttura|Stile|
-|----|----|
-|<p align="center"><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"><img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"/></a></p>|<p align="center"><a href="https://www.w3.org/TR/CSS/#css"><img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"/></a></p>
+<table>
+  <tr>
+    <td><p align="center">Struttura</p></td>
+    <td><p align="center">Stile</p></td>
+  </tr>
+  <tr>
+    <td><p align="center"><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" title="HTML"><img src="https://raw.githubusercontent.com/dunzolo/badges/main/languages/html.svg" alt="html"/></a></p></td>
+    <td><p align="center"><a href="https://www.html.it/guide/guida-css3/" title="Docker"><img src="https://raw.githubusercontent.com/dunzolo/badges/main/languages/css3.svg" alt="css3"/></a></p></td>
+  </tr>
+</table>
  
 </div>
 
